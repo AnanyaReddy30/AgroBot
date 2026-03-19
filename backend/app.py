@@ -6,7 +6,6 @@ app = Flask(__name__)
 def chat():
     user_input = request.json.get("message")
 
-    # Simple intelligent logic (replace later with AI model)
     if "irrigation" in user_input.lower():
         reply = "Drip irrigation is best for saving water."
     elif "fertilizer" in user_input.lower():
@@ -16,7 +15,6 @@ def chat():
 advice."
 
     return jsonify({"reply": reply})
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
-if __name__ == "__main__":
-    app.run()
