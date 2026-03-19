@@ -11,8 +11,8 @@ def chat():
     elif "fertilizer" in user_input.lower():
         reply = "Use compost or NPK based on soil test."
     else:
-        reply = "I can help with crops, soil, irrigation, and farming 
-advice."
+        reply = """I can help with crops, soil, irrigation, and farming 
+advice."""
 
     return jsonify({"reply": reply})
 
